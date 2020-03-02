@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    	 <!-- Bootstrap CSS -->
+   		 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	
+	  	 <!--CSS Link-->
+      	 <link rel="stylesheet" type="text/css" href="indexstyle.css">
+
+   		 <title>WeahterPy Dashboard</title>
+  </head>
+  
+  <body class= "body">
+
+    <!-- Navigation Menue-->
+	
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand navbar"style="color: white;" href="index.html">Latitude</a>
+		  
+		    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		    </button>
+
+		    <div class="collapse navbar-collapse id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  Plots
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				  <a class="dropdown-item" href="lat_temp.html">Max Temperature</a>
+				  <a class="dropdown-item" href="lat_humidity.html">Humidity</a>
+				  <a class="dropdown-item" href="lat_cloud.html">Cloudiness</a>
+				  <a class="dropdown-item" href="lat_wind.html">Wind Speed</a>
+				</div>
+				  </li>
+			  		  <li class="nav-item">
+					<a class="nav-link" href="comparison.html">Comparison <span class="sr-only">(current)</span></a>
+				  </li>
+			  	<li class="nav-item">
+				<a class="nav-link" href="data.html">Data</a>
+			  </li>
+			</ul>
+		  </div>
+		</nav>
+
+
+<!-- Page Contents-->
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7">
+
+		<!-- Summary Box -->
+					<div class="box">
+						<h3 class="title">Summary: Latitude Vs. X</h3>
+						<hr>
+						<img src="Resources/assets/images/Fig1.png" class= "index_photo rounded float-left" alt= "Max Temperature Graph">
+						 <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To
+						 accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over
+						 500 cities.</p>
+						 <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
+						 Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the
+						 source data and visualizations created as part of the analysis, as well as explanations and descriptions of
+						 any trends and correlations witnessed.</p>
+					</div>
+				</div>
+
+
+<!-- Visualization Box -->
+				<div class="col-md-5">
+					<div class="box">
+						<h5 class="title">Visualizations</h5>
+						<hr>
+						<div class="container">
+						    <div class="row" style="padding-bottom: 30px;">
+								<div class="col-6">
+									<a href="max_temperature.html">
+										<img class="panel" src="Resources/assets/images/Fig1.png" alt="Max Temperature Image">
+									</a>
+								</div>
+								<div class="col-6">
+									<a href="humidity.html">
+										<img class="panel" src="Resources/assets/images/Fig2.png" alt="Humidity Graph">
+									</a>
+								</div>
+							</div>
+
+							<div class="row" style="padding-bottom: 30px;">
+								<div class="col-6">
+									<a href="cloudiness.html">
+										<img class="panel" src="Resources/assets/images/Fig3.png" alt="Cloudiness Graph">
+									</a>
+								</div>
+								<div class="col-6">
+									<a href="wind_speed.html">
+										<img class="panel" src="Resources/assets/images/Fig4.png" alt="Wind Speed Graph">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+  <!-- Footer -->
+  <footer>
+    <div class="footer">Copyright &copy; Georgia Tech 2020</div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
