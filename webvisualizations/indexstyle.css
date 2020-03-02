@@ -1,5 +1,8 @@
 /* Styling for Index */
 
+/* Media Queries */
+
+
 
 /* Styling Navigation Bar Logo */
 
@@ -20,8 +23,6 @@
 	color: white;
     background-color: #0BADA6;
 }
-
-
 
 
 /* Styling HTML Body */
@@ -58,6 +59,12 @@
 img {
     width: 100% !important;
     height: 100% !important;
+}
+
+/* Table */
+  .table{
+    font-size: 15px; 
+    border-top-color: white !important; 
 }
 
 /* Styling Footer */
